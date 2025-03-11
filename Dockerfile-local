@@ -45,5 +45,5 @@ RUN cp ../../util/theme-superhero-datascience/tsconfig.json . && \
     jupyter labextension install .
 
 EXPOSE 8888
-ENTRYPOINT ["jupyter", "lab", "--ip=0.0.0.0"]
+ENTRYPOINT ["jupyter", "lab", "--ip=0.0.0.0","--NotebookApp.password='sha1:969db8ac9b6a8963d85087812c6b10368f1c329b'"]
 
